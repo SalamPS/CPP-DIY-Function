@@ -14,7 +14,7 @@ int pow (int inp, int pow) {
 int st_in (string inp) {  // 'inp' stands for Input
   int out = 0;            // 'out' stands for Output
 
-  for (int i = inp.length(), ind = 0; i > 1; i--, ind++) {
+  for (int i = inp.length(), ind = 0; i > 0; i--, ind++) {
     // ASCII converted from char of 'inp', then pushed into 'out'
     out += (inp[ind]-48)*pow(10,i-1);
   }
